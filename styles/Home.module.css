@@ -1,129 +1,484 @@
-.container {
-  padding: 0 2rem;
+#peace {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  opacity: 0.05;
+  height: auto;
+
 }
 
-.main {
+#peace1 {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.3;
+  overflow: hidden;
+
+}
+
+#container {
+  overflow: hidden;
+}
+
+#mainTop {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 6rem;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 1;
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
+#head {
   font-size: 4rem;
+  color: white;
+  font-weight: 600;
 }
 
-.title,
-.description {
+#nameBelow {
+  font-size: 1.4rem;
+  color: var(--theme-color);
+}
+
+
+#headCards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.headCard {
+  color: white;
+  max-width: 20vw;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.141);
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.053);
+  border-radius: 0.5rem;
+}
+
+.headCardHead {
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.416);
+}
+
+.cardContent {
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  color: #d7cfcf;
+}
+
+.cardContent span {
+  background-color: white;
+  color: #111;
+}
+
+.headMore {
+  background-color: var(--theme-color);
+  color: #111;
+  padding: 0.4rem 0.5rem;
+  margin: 0.4rem 0;
+  border-radius: 0.2rem;
+  font-weight: 600;
+
+}
+
+#stats {
+  z-index: 3;
+  margin-top: 2rem;
+
+  border-radius: 0.5rem;
+}
+
+#statsAreaBack {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#statsArea {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 2rem;
+}
+
+.statsColumn {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  flex-direction: column;
+}
+
+.statsColumnHead {
+  font-size: 3rem;
+
+}
+
+.statsData {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#news {
+  margin-top: 2rem;
+
+}
+
+#newBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.newsHead {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.nesSub {
+  font-size: 1.2rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+#newsCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  gap: 2rem
 }
 
-.grid {
+.newsCard {
+  background-color: rgb(235, 227, 216);
+  overflow: hidden;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  border-radius: 0.4rem;
+}
+
+.newsImage {
+  border-radius: 0.2rem;
+  box-shadow: rgba(100, 100, 111, 0.49) 0px 7px 29px 0px;
+}
+
+.newsDetails {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.newsDetails span {
+  font-weight: 900;
+}
+
+.newsAction {
+  margin-top: 0.4rem;
+  background-color: #111;
+  padding: 0.2rem;
+  color: white;
+  border-radius: 0.2rem;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.49) 0px 7px 29px 0px;
+
+}
+
+#demoo {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #d7cfcf07;
+  border-radius: 0.6rem;
+}
+
+#demoBack {
+  display: flex;
+  padding: 0 8rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.demooContent {
+
+  color: white;
+}
+
+#demoContentHeading {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+#demoDetails {
+  font-size: 1.6rem;
+  letter-spacing: 1.7px;
+  color: #d7cfcf;
+}
+
+#submitDemo {
+  background-color: white;
+  width: fit-content;
+  color: #111;
+  padding: 0.2rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+
+#upcoming {
+  margin-top: 3rem;
+}
+
+#upcomingBack {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+#upcomingReleasesCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  gap: 1rem;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.upcomingCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 0.7rem;
+  overflow: hidden;
+
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+
+
+.Date {
+  padding: 1rem 4rem;
+  font-size: 6rem;
+  background-color: rgb(224, 227, 229);
+
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.Date span {
+  font-size: 2rem;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.Month {
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--theme-color);
+  color: white;
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.upcmomingData {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+
+
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+.upReleaseName {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.upArtist,
+.presave {
+  font-size: 1.54rem;
+}
+
+.presave {
+  background-color: rgb(213, 113, 113);
+}
+
+@media screen and (max-width:1200px) {
+  #mainTop {
+    padding: 0 2rem;
+  }
+
+  #mainLogo {
+    width: 300px;
+  }
+
+  .headCard {
+    max-width: unset;
+    min-width: 20vw;
+  }
+
+  #newsCards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #demoDetails {
+    font-size: 1.3rem;
+  }
+
+  #demoBack {
+    padding: 0 2rem;
+  }
+
+  .demooContent {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width:940px) {
+  #name {
+    text-align: center;
+  }
+
+  #mainTop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #peace {
+    display: none;
+  }
+
+  #demoBack {
+    padding: 0 1rem;
+  }
+
+  #demoInage {
+    width: 300px;
+  }
+
+  #stats {
+    background-color: #111;
+  }
+
+  #statsArea {
+    color: white;
+  }
+
+  #newsCards {
+    padding: 0 1rem;
+  }
+
+  .newsImage {
+    width: 200px;
+    height: auto;
+  }
+
+  #peace1 {
+    width: min-content;
+  }
+}
+
+@media screen and (max-width:700px) {
+
+  #headCards {
+    grid-template-columns: 1fr;
+  }
+
+  .headCard {
+    width: 75vw;
+  }
+
+  #demoo {
     flex-direction: column;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+  #newsCards {
+    grid-template-columns: 1fr;
   }
-  .code {
-    background: #111;
+
+  .newsCard {
+    width: 65vw;
+    display: flex;
+    align-items: center;
+
   }
-  .logo img {
-    filter: invert(1);
+
+  .newsImage {
+    width: 100%;
+  }
+
+  .newsDetails {
+    width: 60vw;
+    margin: 0;
+  }
+
+  .statsColumnHead {
+    font-size: 1.5rem;
+
+  }
+
+  .statsData {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+
+  #peace1 {
+    width: 90vw;
+  }
+
+  .upcomingCard {
+    width: 70vw;
+  }
+
+  #demoInage {
+    height: min-content
+  }
+
+  #demoDetails {
+    padding: 0.5rem;
+    text-align: justify;
+  }
+
+  #demoBack {
+    padding: 0;
+  }
+
+  #demoContentHeading {
+    padding: 0.5rem;
+  }
+
+  #submitDemo {
+    margin: 0.5rem;
+    width: 90vw;
+  }
+
+  .date {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Date {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Amatic SC', cursive;
+
 }
 
 a {
@@ -13,14 +15,85 @@ a {
 
 * {
   box-sizing: border-box;
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+main {
+  padding: 2rem;
+  background-color: #111;
+
+
+
+}
+
+:root {
+  --theme-color: #41bfcd;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#navRight {
+  display: flex;
+  gap: 1rem
+}
+
+#navRightIcons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem
+}
+
+#navRightDemo {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width:700px) {
+  nav {
+    background-color: #111;
+    width: 100%;
+    left: 0;
   }
-  body {
-    color: white;
-    background: black;
+
+  #navRight {
+    display: none;
   }
 }
