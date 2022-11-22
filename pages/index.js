@@ -103,7 +103,7 @@ export default function Home() {
                 </div>
                 <div className={s.cardContent}>
                   We are a <span>multigenre</span> label, We focus mainly on the non mainstream genres such as <span>Orchestral</span>, <span>Chill</span>, <span>Alternative Indie</span>, <span>Lo-Fi</span> and so on.
-                  <div class={s.headMore}>
+                  <div className={s.headMore}>
                     Our genres ❯
                   </div>
                 </div>
