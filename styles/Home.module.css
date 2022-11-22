@@ -535,4 +535,13 @@
   #abtText {
     letter-spacing: 2px;
   }
+
+  .headCard {
+    color: white;
+    padding: 1rem;
+    border: none;
+    backdrop-filter: none;
+    background-color: rgba(255, 255, 255, 0.053);
+    border-radius: 0.5rem;
+  }
 }
