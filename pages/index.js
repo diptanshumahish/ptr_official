@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <Image src='/ptrLogo.svg' height={400} width={400} id={s.mainLogo} />
           </div>
-          {/* <div id={s.headContent}>
+          <div id={s.headContent}>
             <div id={s.headCards}>
               <div className={s.headCard}>
                 <div className={s.headCardHead}>
@@ -135,7 +135,7 @@ export default function Home() {
 
 
 
-          </div> */}
+          </div>
         </div>
 
         <section id={s.news}>
