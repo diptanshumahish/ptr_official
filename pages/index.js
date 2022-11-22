@@ -70,7 +70,7 @@ export default function Home() {
         <div id={s.mainTop}>
 
           <Image src='/ptrLogo.svg' width={600} height={200} id={s.peace} />
-          {/* <Image src='/assets/p.svg' width={800} height={900} id={s.peace1} style={{ display: seo }} /> */}
+          <Image src='/assets/p.svg' width={800} height={900} id={s.peace1} style={{ display: seo }} />
           <div id={s.head}>
             <div id={s.name}>
               <div id={s.nameTop}>
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <Image src='/ptrLogo.svg' height={400} width={400} id={s.mainLogo} />
           </div>
-          <div id={s.headContent}>
+          {/* <div id={s.headContent}>
             <div id={s.headCards}>
               <div className={s.headCard}>
                 <div className={s.headCardHead}>
@@ -135,7 +135,7 @@ export default function Home() {
 
 
 
-          </div>
+          </div> */}
         </div>
 
         <section id={s.news}>
