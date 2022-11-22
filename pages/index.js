@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import s from '../styles/Home.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Home() {
+  const [height, setHeight] = useState('0vh');
+  const [display, setDisplay] = useState('0')
   return (
     <div className={s.container}>
       <Head>
@@ -12,11 +15,28 @@ export default function Home() {
         <link rel="icon" href="/ptrLogo.svg" />
       </Head>
       <main>
+        <div id="mobMenu" style={{ height: height, opacity: display }}>
+          <Image src='/assets/close.svg' height={30} width={30} id='MobClose' onClick={() => {
+            setHeight('0vh');
+            setDisplay('0')
+          }} />
+          <div id="mobHeading">
+            Navigation
+          </div>
+          <div id="mobMenuInner">
+            <div className="mobLinks">Home 🡥</div>
+            <div className="mobLinks">Releases 🡥</div>
+            <div className="mobLinks">Demo Submisiion 🡥</div>
+          </div>
+        </div>
 
         {/* main content  */}
         <nav>
           <div id="navLeft">
-            <div id="menu">
+            <div id="menu" onClick={() => {
+              setDisplay('1')
+              setHeight('100vh')
+            }}>
               <Image src='/assets/menu.svg' height={30} width={30} />
               <div>Peace Tempo Records</div>
               <Image src='/ptrLogo.svg' width={30} height={30} />
@@ -268,6 +288,27 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+        </section>
+        <section id={s.abtUs}>
+          <div className={s.newsHead}>
+            About Us
+            <div className={s.nesSub}>
+              A few lines?
+            </div>
+          </div>
+          <div id={s.sbtUsBack}>
+            <div id={s.abt}>
+              <Image src='/ptrLogo.svg' height={300} width={300} id={s.mainLogo} />
+              <div id={s.abtText}>
+                Peace Tempo Records is an indian record label formed in 2021 by <span> Diptanshu Mahish</span>. We are a multigenre record label aiming at
+                helping the <span>non mainstream genres</span> grow. Our main focus has always been genres like Cinematic, Indie, Alternative, Lo-Fi, Regional
+                etc. We are always open to talk about any releases, <span> Feel free</span> to reach us at any time to know more <br />
+                <span> #peace :)</span>
+              </div>
+            </div>
+          </div>
+
 
         </section>
         <section id={s.stats}>

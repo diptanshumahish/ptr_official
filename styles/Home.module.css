@@ -75,8 +75,7 @@
 }
 
 .cardContent span {
-  background-color: white;
-  color: #111;
+  color: var(--theme-color)
 }
 
 .headMore {
@@ -318,6 +317,39 @@
   background-color: rgb(213, 113, 113);
 }
 
+#abtUs {
+  margin-top: 2rem;
+}
+
+#sbtUsBack {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#abt {
+  margin: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.038);
+  padding: 5rem;
+  border-radius: 0.5rem;
+}
+
+#abtText {
+  color: rgba(255, 255, 255, 0.808);
+  font-size: 1.6rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#abtText span {
+  color: var(--theme-color);
+  font-weight: 600;
+}
+
 @media screen and (max-width:1200px) {
   #mainTop {
     padding: 0 2rem;
@@ -391,6 +423,11 @@
   #peace1 {
     width: min-content;
   }
+
+  #abt {
+    margin: 1rem;
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width:700px) {
@@ -412,7 +449,7 @@
   }
 
   .newsCard {
-    width: 65vw;
+    width: 80vw;
     display: flex;
     align-items: center;
 
@@ -423,7 +460,7 @@
   }
 
   .newsDetails {
-    width: 60vw;
+    width: 100%;
     margin: 0;
   }
 
