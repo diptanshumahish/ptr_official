@@ -178,8 +178,8 @@
 }
 
 .newsDetails {
-  font-size: 1.3rem;
-  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  margin: 1rem 0;
 }
 
 .newsDetails span {
@@ -472,6 +472,11 @@
     margin: 0;
   }
 
+  .newsDetails {
+    font-size: 1.7rem;
+    margin: 1.2rem 0;
+  }
+
   .statsColumnHead {
     font-size: 1.5rem;
 
@@ -500,16 +505,25 @@
   }
 
   #demoBack {
-    padding: 0;
+    padding: 1rem;
   }
 
   #demoContentHeading {
     padding: 0.5rem;
   }
 
+  #demoo {
+    margin: 1rem;
+  }
+
+  .demooContent {
+    padding: 0.5rem;
+
+  }
+
   #submitDemo {
     margin: 0.5rem;
-    width: 90vw;
+    width: 85vw;
   }
 
   .date {
@@ -529,10 +543,16 @@
 
   #abt {
     margin: 0;
-    padding: 1rem;
+
+  }
+
+  #sbtUsBack {
+    padding: 0;
+    margin: 0;
   }
 
   #abtText {
+    font-size: 1.5rem;
     letter-spacing: 2px;
   }
 

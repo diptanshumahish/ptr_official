@@ -150,7 +150,7 @@ export default function Home() {
               <div className={s.newsCard}>
                 <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
-                  <span>11th November, 2022:</span>
+                  <span>18th November, 2022:</span>
                   Mundane by Riot Th3 Kid is out now, Go and stream it
                   <div className={s.newsAction}>
                     Go!
@@ -158,10 +158,10 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d00001e02386eb50e6c27e82e7c59840e' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d0000b273b6ad5806c1f0c135a225b10f' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
-                  <span>11th November, 2022:</span>
-                  Mundane by Riot Th3 Kid is out now, Go and stream it
+                  <span>25th November, 2022:</span>
+                  In Your Wake, by BT is out now, it is surely going to give you some peaceful chill vibes :)
                   <Link href=''>
                     <div className={s.newsAction}>
                       Listen Now!
@@ -169,30 +169,30 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d00001e024136c90a68fe2ac2fc4b7cc6' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
-                  <span>11th November, 2022:</span>
-                  Mundane by Riot Th3 Kid is out now, Go and stream it
+                  <span>24th June, 2022:</span>
+                  Ocean Waves is out Now!
                   <div className={s.newsAction}>
                     Go!
                   </div>
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d00001e0258367eaebc42230577dd772f' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
-                  <span>11th November, 2022:</span>
-                  Mundane by Riot Th3 Kid is out now, Go and stream it
+                  <span>25th May, 2022:</span>
+                  Shivansh releases sarfira Dil, a chill hindi track
                   <div className={s.newsAction}>
                     Go!
                   </div>
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d00001e02386eb50e6c27e82e7c59840e' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d00001e02b7d7eb9e40255039d10b2fdd' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
-                  <span>11th November, 2022:</span>
-                  Mundane by Riot Th3 Kid is out now, Go and stream it
+                  <span>10th June, 2022:</span>
+                  Subway Nights by cloudyMusic is a super chill Lo-Fi track , go and check it out now :)
                   <Link href=''>
                     <div className={s.newsAction}>
                       Listen Now!
@@ -200,10 +200,10 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d00001e02a9674a53919f3d08524f9ea6' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
-                  <span>11th November, 2022:</span>
-                  Mundane by Riot Th3 Kid is out now, Go and stream it
+                  <span>20th March, 2022:</span>
+                  Morning Bill by Kxx1sh is surely going to make you feel relaxed , after a tiring day
                   <div className={s.newsAction}>
                     Go!
                   </div>
