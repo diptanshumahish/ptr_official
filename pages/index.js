@@ -6,7 +6,13 @@ import { useState } from 'react';
 
 export default function Home() {
   const [height, setHeight] = useState('0vh');
-  const [display, setDisplay] = useState('0')
+  const [display, setDisplay] = useState('0');
+  const [seo, setSeo] = useState('none');
+
+
+  setTimeout(() => {
+    setSeo('block')
+  }, 2000)
   return (
     <div className={s.container}>
       <Head>
@@ -62,9 +68,9 @@ export default function Home() {
           </div>
         </nav>
         <div id={s.mainTop}>
-          {/* decorations */}
+
           <Image src='/ptrLogo.svg' width={600} height={200} id={s.peace} />
-          <Image src='/assets/p.svg' width={800} height={900} id={s.peace1} />
+          <Image src='/assets/p.svg' width={800} height={900} id={s.peace1} style={{ display: seo }} />
           <div id={s.head}>
             <div id={s.name}>
               <div id={s.nameTop}>
@@ -125,9 +131,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div id={s.demo}>
-              Submit a Demo
-            </div> */}
+
 
 
 
