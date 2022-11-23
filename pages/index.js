@@ -160,13 +160,14 @@ export default function Home() {
           <div id={s.newBack}>
             <div id={s.newsCards}>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d00001e02a9674a53919f3d08524f9ea6' width={250} height={250} className={s.newsImage} />
+                <Image src='/assets/sub.svg' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
                   <span>23rd November, 2022:</span>
                   Cozy Winter submissions are open!
-                  <div className={s.newsAction}>
-                    Go!
-                  </div>
+                  <Link href='/demo'>
+                    <div className={s.newsAction}>
+                      Submit Now!
+                    </div></Link>
                 </div>
               </div>
               <div className={s.newsCard}>
@@ -174,9 +175,10 @@ export default function Home() {
                 <div className={s.newsDetails}>
                   <span>18th November, 2022:</span>
                   Mundane by Riot Th3 Kid is out now, Go and stream it
-                  <div className={s.newsAction}>
-                    Go!
-                  </div>
+                  <Link href='https://open.spotify.com/track/3iMMCqRVXHRkCao9O6aeGt?si=bec6a7dc2e5c40d8'>
+                    <div className={s.newsAction}>
+                      Listen Now!
+                    </div></Link>
                 </div>
               </div>
               <div className={s.newsCard}>
@@ -184,7 +186,7 @@ export default function Home() {
                 <div className={s.newsDetails}>
                   <span>25th November, 2022:</span>
                   In Your Wake, by BT is out now, it is surely going to give you some peaceful chill vibes :)
-                  <Link href=''>
+                  <Link href='https://open.spotify.com/track/6VDiUaabg8x9i4evxPeNME?si=885f43d2071c4628'>
                     <div className={s.newsAction}>
                       Listen Now!
                     </div></Link>
@@ -195,9 +197,10 @@ export default function Home() {
                 <div className={s.newsDetails}>
                   <span>24th June, 2022:</span>
                   Ocean Waves is out Now!
-                  <div className={s.newsAction}>
-                    Go!
-                  </div>
+                  <Link href='https://open.spotify.com/track/68964M4fGiNboJX0mjdcbW?si=862aad479a3a4817'>
+                    <div className={s.newsAction}>
+                      Listen Now!
+                    </div></Link>
                 </div>
               </div>
               <div className={s.newsCard}>
@@ -205,9 +208,10 @@ export default function Home() {
                 <div className={s.newsDetails}>
                   <span>25th May, 2022:</span>
                   Shivansh releases sarfira Dil, a chill hindi track
-                  <div className={s.newsAction}>
-                    Go!
-                  </div>
+                  <Link href='https://open.spotify.com/track/68mUbkiR719RwGxamaU0cf?si=c3fa6f40a2d14f88'>
+                    <div className={s.newsAction}>
+                      Listen Now!
+                    </div></Link>
                 </div>
               </div>
               <div className={s.newsCard}>
@@ -215,7 +219,7 @@ export default function Home() {
                 <div className={s.newsDetails}>
                   <span>10th June, 2022:</span>
                   Subway Nights by cloudyMusic is a super chill Lo-Fi track , go and check it out now :)
-                  <Link href=''>
+                  <Link href='https://open.spotify.com/track/6IdyCZWFIpMYKfggAlGpNY?si=ff47f2b6acf14453'>
                     <div className={s.newsAction}>
                       Listen Now!
                     </div></Link>
