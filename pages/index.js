@@ -2,13 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import s from '../styles/Home.module.css';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { initFirebase } from "../src/config";
+import Aos from 'aos'
+import "aos/dist/aos.css";
 export default function Home() {
   const [height, setHeight] = useState('0vh');
   const [display, setDisplay] = useState('0');
   const [seo, setSeo] = useState('none');
-  const app = initFirebase()
+  const app = initFirebase();
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, [])
 
   setTimeout(() => {
     setSeo('block')
@@ -119,8 +125,8 @@ export default function Home() {
           </div>
           <div id={s.headContent}>
             <div id={s.headCards}>
-              <div className={s.headCard}>
-                <div className={s.headCardHead}>
+              <div className={s.headCard} data-aos='fade-right'>
+                <div className={s.headCardHead} >
                   WHO ARE WE?
                 </div>
                 <div className={s.cardContent}>
@@ -131,11 +137,11 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.headCard}>
+              <div className={s.headCard} data-aos='fade-right'>
                 <div className={s.headCardHead}>
                   GENRES WE ACCEPT?
                 </div>
-                <div className={s.cardContent}>
+                <div className={s.cardContent} >
                   We are a <span>multigenre</span> label, We focus mainly on the non mainstream genres such as <span>Orchestral</span>, <span>Chill</span>, <span>Alternative Indie</span>, <span>Lo-Fi</span> and so on.
                   <Link href='/genres'>
                     <div className={s.headMore}>
@@ -143,7 +149,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.headCard}>
+              <div className={s.headCard} data-aos='fade-right'>
                 <div className={s.headCardHead}>
                   OUR RELEASES
                 </div>
@@ -155,7 +161,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.headCard}>
+              <div className={s.headCard} data-aos='fade-right'>
                 <div className={s.headCardHead}>
                   OUR ARTISTS
                 </div>
@@ -185,7 +191,7 @@ export default function Home() {
           </div>
           <div id={s.newBack}>
             <div id={s.newsCards}>
-              <div className={s.newsCard}>
+              <div className={s.newsCard} data-aos="flip-right">
                 <Image src='/assets/sub.svg' width={250} height={250} className={s.newsImage} alt='submissions' />
                 <div className={s.newsDetails}>
                   <span>23rd November, 2022:</span>
@@ -196,7 +202,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.newsCard}>
+              <div className={s.newsCard} data-aos="flip-right">
                 <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>18th November, 2022:</span>
@@ -207,7 +213,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.newsCard}>
+              <div className={s.newsCard}data-aos="flip-right">
                 <Image src='https://i.scdn.co/image/ab67616d0000b273b6ad5806c1f0c135a225b10f' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>25th November, 2022:</span>
@@ -218,7 +224,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.newsCard}>
+              <div className={s.newsCard} data-aos="flip-right">
                 <Image src='https://i.scdn.co/image/ab67616d00001e024136c90a68fe2ac2fc4b7cc6' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>24th June, 2022:</span>
@@ -229,7 +235,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.newsCard}>
+              <div className={s.newsCard} data-aos="flip-right">
                 <Image src='https://i.scdn.co/image/ab67616d00001e0258367eaebc42230577dd772f' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>25th May, 2022:</span>
@@ -240,7 +246,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.newsCard}>
+              <div className={s.newsCard} data-aos="flip-right">
                 <Image src='https://i.scdn.co/image/ab67616d00001e02b7d7eb9e40255039d10b2fdd' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>10th June, 2022:</span>
