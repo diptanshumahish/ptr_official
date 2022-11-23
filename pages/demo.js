@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { doc, setDoc, getFirestore, Timestamp } from 'firebase/firestore';
 import { useState } from "react";
+import { initFirebase } from "../src/config";
 
 export default function Demo() {
     const [artistName, setArtistName] = useState('');
@@ -14,6 +15,7 @@ export default function Demo() {
     const [email, setEmail] = useState('');
     const [comments, setComments] = useState('');
     const db = getFirestore();
+    const app = initFirebase();
 
     async function submit() {
         setDoc(doc(db, "submissions", `${email} + ${Timestamp.now()}`), {

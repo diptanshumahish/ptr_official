@@ -60,8 +60,6 @@
   color: white;
   max-width: 20vw;
   padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.141);
-  backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.053);
   border-radius: 0.5rem;
 }
@@ -450,6 +448,8 @@
 
   .headCard {
     width: 75vw;
+    border: none;
+    backdrop-filter: none;
   }
 
   #demoo {
