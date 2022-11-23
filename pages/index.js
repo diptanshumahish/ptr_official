@@ -36,7 +36,7 @@ export default function Home() {
                 setDisplay('0')
               }} >Home  <Image src='/assets/home.svg' height={30} width={30} alt='home' /></div>
             </Link>
-            <Link href='/aboutus'>
+            <Link href='/about'>
               <div className="mobLinks" onClick={() => {
                 setHeight('0vh');
                 setDisplay('0')
@@ -72,10 +72,7 @@ export default function Home() {
 
         {/* main content  */}
         <nav>
-          <div id="navLeft" onClick={() => {
-            setDisplay('1')
-            setHeight('100vh')
-          }}>
+          <div id="navLeft" >
             <div id="menu" >
               <Image src='/assets/menu.svg' height={30} width={30} alt='menu' onClick={() => {
                 setDisplay('1')
