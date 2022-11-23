@@ -3,12 +3,12 @@ import Image from 'next/image'
 import s from '../styles/Home.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
-
+import { initFirebase } from "../src/config";
 export default function Home() {
   const [height, setHeight] = useState('0vh');
   const [display, setDisplay] = useState('0');
   const [seo, setSeo] = useState('none');
-
+  const app = initFirebase()
 
   setTimeout(() => {
     setSeo('block')
@@ -30,20 +30,28 @@ export default function Home() {
             Navigation
           </div>
           <div id="mobMenuInner">
-            <div className="mobLinks">Home 🡥</div>
+            <Link href='/'>
+              <div className="mobLinks" onClick={() => {
+                setHeight('0vh');
+                setDisplay('0')
+              }} >Home 🡥</div>
+            </Link>
             <div className="mobLinks">Releases 🡥</div>
-            <div className="mobLinks">Demo Submisiion 🡥</div>
+            <Link href='/demo'><div className="mobLinks">Demo Submisiion 🡥</div></Link>
           </div>
         </div>
 
         {/* main content  */}
         <nav>
-          <div id="navLeft">
-            <div id="menu" onClick={() => {
-              setDisplay('1')
-              setHeight('100vh')
-            }}>
-              <Image src='/assets/menu.svg' height={30} width={30} />
+          <div id="navLeft" onClick={() => {
+            setDisplay('1')
+            setHeight('100vh')
+          }}>
+            <div id="menu" >
+              <Image src='/assets/menu.svg' height={30} width={30} onClick={() => {
+                setDisplay('1')
+                setHeight('100vh')
+              }} />
               <div>Peace Tempo Records</div>
               <Image src='/ptrLogo.svg' width={30} height={30} />
             </div>
@@ -60,7 +68,7 @@ export default function Home() {
                 <Image src='/assets/gmail.svg' height={20} width={20} />
               </Link>
             </div>
-            <Link href=''>
+            <Link href='/demo'>
               <div id="navRightDemo">
                 Send Demo
               </div>
@@ -92,7 +100,7 @@ export default function Home() {
                 <div className={s.cardContent}>
                   Record Label from India , Estd 2021. Formed with the goal of helping upcoming and underrated asrtists especially for the non mainstream genres :)
                   <Link href='/Login'>
-                    <div class={s.headMore}>
+                    <div className={s.headMore}>
                       About Us ^^ ❯
                     </div></Link>
                 </div>
@@ -114,7 +122,7 @@ export default function Home() {
                 </div>
                 <div className={s.cardContent}>
                   Check out  all our releases, below, it tells about our taste :)
-                  <div class={s.headMore}>
+                  <div className={s.headMore}>
                     Releases here ❯
                   </div>
                 </div>
@@ -125,7 +133,7 @@ export default function Home() {
                 </div>
                 <div className={s.cardContent}>
                   Our artsts are those, who make it all possible, check them out!
-                  <div class={s.headMore}>
+                  <div className={s.headMore}>
                     Our artists ❯
                   </div>
                 </div>
@@ -233,7 +241,7 @@ export default function Home() {
                   the upcoming artists especially those who release more of the non mianstream genres songs
 
                 </div>
-                <div id={s.submitDemo}>Submit a Demo ❯</div>
+                <Link href='/demo'><div id={s.submitDemo}>Submit a Demo ❯</div></Link>
               </div>
             </div>
           </div>

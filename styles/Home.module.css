@@ -33,6 +33,10 @@
 
 }
 
+#navLeft {
+  cursor: pointer;
+}
+
 #head {
   font-size: 4rem;
   color: white;
