@@ -18,7 +18,7 @@ export default function Demo() {
     const app = initFirebase();
 
     async function submit() {
-        setDoc(doc(db, "submissions", `${email} + ${Timestamp.now()}`), {
+        setDoc(doc(db, "submissions", `${email} + ${Date.now().toString()}`), {
             artistName: artistName,
             demoLink: demoLink,
             spotifyLink: spotifyLink,
@@ -36,6 +36,12 @@ export default function Demo() {
                 progress: undefined,
                 theme: "dark",
             });
+
+            setArtistName('');
+            setComments('');
+            setDemoLink('');
+            setEmail('');
+            setSpotifyLink('');
         })
     }
     return (

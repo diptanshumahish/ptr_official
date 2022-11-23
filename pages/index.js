@@ -99,7 +99,7 @@ export default function Home() {
                 </div>
                 <div className={s.cardContent}>
                   Record Label from India , Estd 2021. Formed with the goal of helping upcoming and underrated asrtists especially for the non mainstream genres :)
-                  <Link href='/Login'>
+                  <Link href='/about'>
                     <div className={s.headMore}>
                       About Us ^^ ❯
                     </div></Link>
@@ -111,9 +111,10 @@ export default function Home() {
                 </div>
                 <div className={s.cardContent}>
                   We are a <span>multigenre</span> label, We focus mainly on the non mainstream genres such as <span>Orchestral</span>, <span>Chill</span>, <span>Alternative Indie</span>, <span>Lo-Fi</span> and so on.
-                  <div className={s.headMore}>
-                    Our genres ❯
-                  </div>
+                  <Link href='/genres'>
+                    <div className={s.headMore}>
+                      Our genres ❯
+                    </div></Link>
                 </div>
               </div>
               <div className={s.headCard}>
@@ -122,9 +123,10 @@ export default function Home() {
                 </div>
                 <div className={s.cardContent}>
                   Check out  all our releases, below, it tells about our taste :)
-                  <div className={s.headMore}>
-                    Releases here ❯
-                  </div>
+                  <Link href='/releases'>
+                    <div className={s.headMore}>
+                      Releases here ❯
+                    </div></Link>
                 </div>
               </div>
               <div className={s.headCard}>
@@ -133,9 +135,11 @@ export default function Home() {
                 </div>
                 <div className={s.cardContent}>
                   Our artsts are those, who make it all possible, check them out!
-                  <div className={s.headMore}>
-                    Our artists ❯
-                  </div>
+                  <Link href='/artists'>
+                    <div className={s.headMore}>
+                      Our artists ❯
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -155,6 +159,16 @@ export default function Home() {
           </div>
           <div id={s.newBack}>
             <div id={s.newsCards}>
+              <div className={s.newsCard}>
+                <Image src='https://i.scdn.co/image/ab67616d00001e02a9674a53919f3d08524f9ea6' width={250} height={250} className={s.newsImage} />
+                <div className={s.newsDetails}>
+                  <span>23rd November, 2022:</span>
+                  Cozy Winter submissions are open!
+                  <div className={s.newsAction}>
+                    Go!
+                  </div>
+                </div>
+              </div>
               <div className={s.newsCard}>
                 <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} />
                 <div className={s.newsDetails}>
@@ -207,16 +221,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d00001e02a9674a53919f3d08524f9ea6' width={250} height={250} className={s.newsImage} />
-                <div className={s.newsDetails}>
-                  <span>20th March, 2022:</span>
-                  Morning Bill by Kxx1sh is surely going to make you feel relaxed , after a tiring day
-                  <div className={s.newsAction}>
-                    Go!
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
