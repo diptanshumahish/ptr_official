@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <main>
         <div id="mobMenu" style={{ height: height, opacity: display }}>
-          <Image src='/assets/close.svg' height={30} width={30} id='MobClose' onClick={() => {
+          <Image src='/assets/close.svg' height={30} width={30} id='MobClose' alt='close' onClick={() => {
             setHeight('0vh');
             setDisplay('0')
           }} />
@@ -34,10 +34,39 @@ export default function Home() {
               <div className="mobLinks" onClick={() => {
                 setHeight('0vh');
                 setDisplay('0')
-              }} >Home 🡥</div>
+              }} >Home  <Image src='/assets/home.svg' height={30} width={30} alt='home' /></div>
             </Link>
-            <div className="mobLinks">Releases 🡥</div>
-            <Link href='/demo'><div className="mobLinks">Demo Submisiion 🡥</div></Link>
+            <Link href='/aboutus'>
+              <div className="mobLinks" onClick={() => {
+                setHeight('0vh');
+                setDisplay('0')
+              }} >About Us  <Image src='/assets/abt.svg' height={30} width={30} alt='aboutus' /></div>
+            </Link>
+            <Link href='/artists'>
+              <div className="mobLinks" onClick={() => {
+                setHeight('0vh');
+                setDisplay('0')
+              }} >Artists  <Image src='/assets/artists.svg' height={30} width={30} alt='artists' className='svg' /></div>
+            </Link>
+            <Link href='/releases'>
+              <div className="mobLinks" onClick={() => {
+                setHeight('0vh');
+                setDisplay('0')
+              }} >Releases  <Image src='/assets/rel.svg' height={30} width={30} alt='releases' /></div>
+            </Link>
+
+            <Link href='/demo'><div className="mobLinks">Demo Submisiion  <Image src='/assets/demlink.svg' height={30} width={30} alt='demo' /></div></Link>
+          </div>
+          <div id="socials">
+            <Link href='https://www.instagram.com/peacetempo_recs/'>
+              <Image src='/assets/insta.svg' height={30} width={30} alt='insta' />
+            </Link>
+            <Link href='https://open.spotify.com/playlist/4keaTDEOuxB6Av9tSW9ib4'>
+              <Image src='/assets/spotify.svg' height={30} width={30} alt='spotify' />
+            </Link>
+            <Link href='mailto:peacetemporecords@gmail.com'>
+              <Image src='/assets/gmail.svg' height={30} width={30} alt='gmail' />
+            </Link>
           </div>
         </div>
 
@@ -48,7 +77,7 @@ export default function Home() {
             setHeight('100vh')
           }}>
             <div id="menu" >
-              <Image src='/assets/menu.svg' height={30} width={30} onClick={() => {
+              <Image src='/assets/menu.svg' height={30} width={30} alt='menu' onClick={() => {
                 setDisplay('1')
                 setHeight('100vh')
               }} />
@@ -58,14 +87,14 @@ export default function Home() {
           </div>
           <div id="navRight">
             <div id="navRightIcons">
-              <Link href='/'>
-                <Image src='/assets/insta.svg' height={20} width={20} />
+              <Link href='https://www.instagram.com/peacetempo_recs/'>
+                <Image src='/assets/insta.svg' height={20} width={20} alt='insta' />
               </Link>
-              <Link href=''>
-                <Image src='/assets/spotify.svg' height={20} width={20} />
+              <Link href='https://open.spotify.com/playlist/4keaTDEOuxB6Av9tSW9ib4'>
+                <Image src='/assets/spotify.svg' height={20} width={20} alt='spotify' />
               </Link>
-              <Link href=''>
-                <Image src='/assets/gmail.svg' height={20} width={20} />
+              <Link href='mailto:peacetemporecords@gmail.com'>
+                <Image src='/assets/gmail.svg' height={20} width={20} alt='gmail' />
               </Link>
             </div>
             <Link href='/demo'>
@@ -77,8 +106,8 @@ export default function Home() {
         </nav>
         <div id={s.mainTop}>
 
-          <Image src='/ptrLogo.svg' width={600} height={200} id={s.peace} />
-          <Image src='/assets/p.svg' width={800} height={900} id={s.peace1} style={{ display: seo }} />
+          <Image src='/ptrLogo.svg' width={600} height={200} id={s.peace} alt='logo' />
+          <Image src='/assets/p.svg' width={800} height={900} id={s.peace1} style={{ display: seo }} alt='logo' />
           <div id={s.head}>
             <div id={s.name}>
               <div id={s.nameTop}>
@@ -89,7 +118,7 @@ export default function Home() {
                 #peacetemporecords2021
               </div>
             </div>
-            <Image src='/ptrLogo.svg' height={400} width={400} id={s.mainLogo} />
+            <Image src='/ptrLogo.svg' height={400} width={400} id={s.mainLogo} alt='logo' />
           </div>
           <div id={s.headContent}>
             <div id={s.headCards}>
@@ -160,7 +189,7 @@ export default function Home() {
           <div id={s.newBack}>
             <div id={s.newsCards}>
               <div className={s.newsCard}>
-                <Image src='/assets/sub.svg' width={250} height={250} className={s.newsImage} />
+                <Image src='/assets/sub.svg' width={250} height={250} className={s.newsImage} alt='submissions' />
                 <div className={s.newsDetails}>
                   <span>23rd November, 2022:</span>
                   Cozy Winter submissions are open!
@@ -171,7 +200,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>18th November, 2022:</span>
                   Mundane by Riot Th3 Kid is out now, Go and stream it
@@ -182,7 +211,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d0000b273b6ad5806c1f0c135a225b10f' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d0000b273b6ad5806c1f0c135a225b10f' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>25th November, 2022:</span>
                   In Your Wake, by BT is out now, it is surely going to give you some peaceful chill vibes :)
@@ -193,7 +222,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d00001e024136c90a68fe2ac2fc4b7cc6' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d00001e024136c90a68fe2ac2fc4b7cc6' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>24th June, 2022:</span>
                   Ocean Waves is out Now!
@@ -204,7 +233,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d00001e0258367eaebc42230577dd772f' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d00001e0258367eaebc42230577dd772f' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>25th May, 2022:</span>
                   Shivansh releases sarfira Dil, a chill hindi track
@@ -215,7 +244,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={s.newsCard}>
-                <Image src='https://i.scdn.co/image/ab67616d00001e02b7d7eb9e40255039d10b2fdd' width={250} height={250} className={s.newsImage} />
+                <Image src='https://i.scdn.co/image/ab67616d00001e02b7d7eb9e40255039d10b2fdd' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>10th June, 2022:</span>
                   Subway Nights by cloudyMusic is a super chill Lo-Fi track , go and check it out now :)
@@ -239,7 +268,7 @@ export default function Home() {
           </div>
           <div id={s.demoBack}>
             <div id={s.demoo}>
-              <Image src='/assets/demo.svg' width={400} height={400} id={s.demoInage} />
+              <Image src='/assets/demo.svg' width={400} height={400} id={s.demoInage} alt='demo' />
               <div className={s.demooContent}>
                 <div id={s.demoContentHeading}>
                   We are open for new releases!
@@ -267,7 +296,7 @@ export default function Home() {
               <div className={s.upcomingCard}>
                 <div className={s.date}>
                   <div className={s.Date}>
-                    12 <span>th</span>
+                    23 <span>rd</span>
                   </div>
                   <div className={s.Month}>
                     November
@@ -275,35 +304,13 @@ export default function Home() {
                 </div>
                 <div className={s.upcmomingData}>
                   <div className={s.upReleaseName}>
-                    Morning Bliss
+                    Submissions Open
                   </div>
                   <div className={s.upArtist}>
-                    Kxx1sh
-                  </div>
-                  <div className={s.presave}>
-                    Presave
-                  </div>
-                </div>
-              </div>
 
-              <div className={s.upcomingCard}>
-                <div className={s.date}>
-                  <div className={s.Date}>
-                    12 <span>th</span>
-                  </div>
-                  <div className={s.Month}>
-                    November
-                  </div>
-                </div>
-                <div className={s.upcmomingData}>
-                  <div className={s.upReleaseName}>
-                    Morning Bliss
-                  </div>
-                  <div className={s.upArtist}>
-                    Kxx1sh
                   </div>
                   <div className={s.presave}>
-                    Presave
+                    Submit now
                   </div>
                 </div>
               </div>
@@ -320,7 +327,7 @@ export default function Home() {
           </div>
           <div id={s.sbtUsBack}>
             <div id={s.abt}>
-              <Image src='/ptrLogo.svg' height={300} width={300} id={s.mainLogo} />
+              <Image src='/ptrLogo.svg' height={300} width={300} id={s.mainLogo} alt='logo' />
               <div id={s.abtText}>
                 Peace Tempo Records is an indian record label formed in 2021 by <span> Diptanshu Mahish</span>. We are a multigenre record label aiming at
                 helping the <span>non mainstream genres</span> grow. Our main focus has always been genres like Cinematic, Indie, Alternative, Lo-Fi, Regional

@@ -14,6 +14,7 @@ export default function Demo() {
     const [spotifyLink, setSpotifyLink] = useState('');
     const [email, setEmail] = useState('');
     const [comments, setComments] = useState('');
+    const [but, setBut] = useState('#41bfcd')
     const db = getFirestore();
     const app = initFirebase();
 
@@ -26,7 +27,7 @@ export default function Demo() {
             comments, comments,
             SubmissionDate: Timestamp.now(),
         }, { merge: true, mergeFields: true }).then(() => {
-            toast.success('Submitted succesfully', {
+            toast.success('Demo Submission succesfull', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -42,6 +43,7 @@ export default function Demo() {
             setDemoLink('');
             setEmail('');
             setSpotifyLink('');
+            setBut('#41bfcd')
         })
     }
     return (
@@ -62,11 +64,11 @@ export default function Demo() {
                     pauseOnHover
                     theme="dark"
                 />
-                <Image src='/ptrLogo.svg' width={300} height={300} id={s.backImage} />
+                <Image src='/ptrLogo.svg' width={300} height={300} id={s.backImage} alt='back' />
                 <div id={s.Top}>
                     <Link href='/'>
                         <div id={s.topLeft}>
-                            <Image src='/assets/back.svg' height={45} width={45} />
+                            <Image src='/assets/back.svg' height={45} width={45} alt='logo' />
                             Demo Submissions
                         </div></Link>
                     <div id={s.TopRight}></div>
@@ -105,8 +107,23 @@ export default function Demo() {
                         <input type="text" className={s.input} placeholder="Enter your comments" id="comments" onChange={() => {
                             setComments(document.getElementById('comments').value);
                         }} />
-                        <div id={s.submitButton} onClick={() => {
-                            submit();
+                        <div id={s.submitButton} style={{ backgroundColor: but }} onClick={() => {
+                            if (email == '' || demoLink == '' || artistName == '') {
+                                toast.error('Please fill up all fields', {
+                                    position: "top-right",
+                                    autoClose: 5000,
+                                    hideProgressBar: false,
+                                    closeOnClick: true,
+                                    pauseOnHover: true,
+                                    draggable: true,
+                                    progress: undefined,
+                                    theme: "dark",
+                                });
+                            }
+                            else {
+                                submit();
+                                setBut('#98d7de');
+                            }
                         }}>Submit</div>
                     </div>
                     <div id={s.FormRight}>
@@ -114,11 +131,15 @@ export default function Demo() {
                         <span>1. Your Demo is completely original.</span> <br />
                         <span>2. Your demo can be of any genres, but not the mainstream ones such as Dubstep, Electronic and so on. </span> <br />
                         <span>3. If you include any royality free beats provide official links to the sample pack/ website</span> <br />
-                        <span>4. Our split is 80 / 20 , artists keep 80% of what revenue generates</span>
-                        <span>5. For more queries feel free to contact us</span>
+                        <span>4. Our split is 80 / 20 , artists keep 80% of what revenue generates</span> <br />
+                        <span>5. For more queries feel free to <Link href='mailto:peacetemporecords@gmail.com' id={s.con}>contact us</Link></span>
                     </div>
                 </div>
+                <footer>
+                    &copy; Peace Tempo Records, 2022
+                </footer>
             </main>
+
         </div>
     )
 }

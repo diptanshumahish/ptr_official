@@ -90,6 +90,10 @@
     cursor: pointer;
 }
 
+#con {
+    color: var(--theme-color);
+}
+
 
 
 @media screen and (max-width:700px) {
