@@ -1,12 +1,18 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import s from '../styles/releases.module.css';
+import Aos from 'aos'
+import "aos/dist/aos.css";
 import r from '../releases.json';
 export default function Releases() {
     const [height, setHeight] = useState('0vh');
     const [display, setDisplay] = useState('0');
+    useEffect(() => {
+        Aos.init();
+        Aos.refresh();
+    }, [])
     return (
         <div>
             <Head>
@@ -99,7 +105,7 @@ export default function Releases() {
                     <div id={s.releasesCards}>
                         {r.map((ele) => {
                             return (
-                                <div className={s.releasesCard}>
+                                <div className={s.releasesCard} data-aos="flip-right">
                                     <div id={s.image}>
                                         <Image src={ele.imageLink} width={200} height={200} alt='release' className={s.img} />
 
@@ -122,6 +128,9 @@ export default function Releases() {
                         })}
                     </div>
                 </div>
+                <footer>
+                    &copy; Peace Tempo Records, 2022
+                </footer>
             </main>
         </div>
     )

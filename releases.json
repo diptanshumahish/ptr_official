@@ -1,18 +1,146 @@
 [
     {
         "id": 1,
-        "name": "In Your Wake",
-        "artist": "BT",
-        "imageLink": "https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0",
+        "name": "Mundane",
+        "artist": "Riot th3 Kid",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e025e25ddeab48d37aaec6d98f0",
         "genre": "chill, Lo-Fi",
-        "link": "url"
+        "link": "https://open.spotify.com/track/3iMMCqRVXHRkCao9O6aeGt?si=b1185142214b4029"
     },
     {
         "id": 2,
         "name": "In Your Wake",
         "artist": "BT",
-        "imageLink": "https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02b6ad5806c1f0c135a225b10f",
         "genre": "chill, Lo-Fi",
-        "link": "url"
+        "link": "https://open.spotify.com/track/6VDiUaabg8x9i4evxPeNME?si=6b5797cfabc14259"
+    },
+    {
+        "id": 3,
+        "name": "Ocean Waves",
+        "artist": "BT",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e024136c90a68fe2ac2fc4b7cc6",
+        "genre": "chill, Lo-Fi",
+        "link": "https://open.spotify.com/track/68964M4fGiNboJX0mjdcbW?si=2f52777fcb4f4d48"
+    },
+    {
+        "id": 4,
+        "name": "Sarfira Dil",
+        "artist": "Shivansh Beast",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e0258367eaebc42230577dd772f",
+        "genre": "regional , indie",
+        "link": "https://open.spotify.com/track/68mUbkiR719RwGxamaU0cf?si=3d95be3184794368"
+    },
+    {
+        "id": 5,
+        "name": "Subway Nights",
+        "artist": "cloudy music",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02b7d7eb9e40255039d10b2fdd",
+        "genre": "chill, Lo-Fi",
+        "link": "https://open.spotify.com/track/6IdyCZWFIpMYKfggAlGpNY?si=0320d0bb2c074ef8"
+    },
+    {
+        "id": 5,
+        "name": "Morning Bliss",
+        "artist": "Kxx1sh",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02a9674a53919f3d08524f9ea6",
+        "genre": "Lo-Fi, ambient",
+        "link": "https://open.spotify.com/track/58dYPacXAacL9JwUWxaSlT?si=3f12294ba51a463c"
+    },
+    {
+        "id": 6,
+        "name": "Nightmare",
+        "artist": "XooFa",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e021ebde947ceb6dea7c693a84a",
+        "genre": "Electronic",
+        "link": "https://open.spotify.com/track/0dnU2eqxj0sURBQfjOjKgn?si=8cef0f5f09454ec6"
+    },
+    {
+        "id": 7,
+        "name": "The Winter Evening",
+        "artist": "Diptanshu Mahish",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02386eb50e6c27e82e7c59840e",
+        "genre": "Cinematic",
+        "link": "https://open.spotify.com/track/48aRqF8EKHaX2uUVBubFC6?si=6b744e8804e54e78"
+    },
+    {
+        "id": 8,
+        "name": "A Midnight Story",
+        "artist": "Diptanshu Mahish",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02386eb50e6c27e82e7c59840e",
+        "genre": "cinematic",
+        "link": "https://open.spotify.com/track/3OzKtDCwA6OJEfwEroXrUA?si=21401b17dec74ad4"
+    },
+    {
+        "id": 9,
+        "name": "Still Love You",
+        "artist": "XooFa",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e0283a1823be94fbfb134e6c11e",
+        "genre": "Electronic",
+        "link": "https://open.spotify.com/track/1OzI3sw67fNlBavNVyDw9C?si=a9ed9e5974994f28"
+    },
+    {
+        "id": 10,
+        "name": "Twillight Adventures",
+        "artist": "Di99x",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02ac1d6af059290425979a7dea",
+        "genre": "Cineamtic, Ambient",
+        "link": "https://open.spotify.com/track/6fUCui8BZeAaCec0B5n2GP?si=67e0ec0aa43b47c8"
+    },
+    {
+        "id": 11,
+        "name": "Why Him?",
+        "artist": "Vector",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e023f32da46ea14d3f248bd6deb",
+        "genre": "Chill",
+        "link": "https://open.spotify.com/track/1MGU2XEBDKJR9MAbrxLdQa?si=c2abe9961c714085"
+    },
+    {
+        "id": 12,
+        "name": "Cold Coffee",
+        "artist": "Sugar Green",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e0221e28f23e8c125445a0da5e2",
+        "genre": "Chill",
+        "link": "https://open.spotify.com/track/0VAWmk5Sv3cUMAM832yjhK?si=56d234be8c2140e0"
+    },
+    {
+        "id": 13,
+        "name": "To the Nowhere",
+        "artist": "Diptanshu Mahish",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e0215b0bba16c61f014c06e7de0",
+        "genre": "Orchestral, Cinematic",
+        "link": "https://open.spotify.com/track/2RHHgUzIv8pLG7r997sn4W?si=ec52a84c3767478e"
+    },
+    {
+        "id": 14,
+        "name": "Tired Morning",
+        "artist": "Muuz",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02f4aabb9631a592c3e8bfe81b",
+        "genre": "chill",
+        "link": "https://open.spotify.com/track/6s29AmQoDdIJn39J2FzCyc?si=98a6d1e004f04f64"
+    },
+    {
+        "id": 15,
+        "name": "Redemancy",
+        "artist": "Diptanshu Mahish, Godhuli Dan",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02ab702e1cbd96a2063031673e",
+        "genre": "Indie, Dark",
+        "link": "https://open.spotify.com/track/6D6ISvftjQNTLQ1aVnTyS4?si=ad32251190ad44f7"
+    },
+    {
+        "id": 16,
+        "name": "Walking Away",
+        "artist": "Diptanshu Mahish",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02f7991d72df908aa4530878f2",
+        "genre": "Ambient, Dark, Chill",
+        "link": "https://open.spotify.com/track/0U2YhqiZzXOkIYcIFgF2bL?si=541c4bfc4a124f49"
+    },
+    {
+        "id": 17,
+        "name": "Door Kahi Chamke",
+        "artist": "Prodreams",
+        "imageLink": "https://i.scdn.co/image/ab67616d00001e02b82a277f9b3cf249f78657d4",
+        "genre": "Indie, Regional",
+        "link": "https://open.spotify.com/track/1ryQxHpo43gxprjOUYuFg8?si=d77351ac0f294136"
     }
 ]
