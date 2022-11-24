@@ -103,9 +103,9 @@ export default function Releases() {
                         <div id={s.subHead}>Check Out our releases</div>
                     </div>
                     <div id={s.releasesCards}>
-                        {r.map((ele) => {
+                        {r.map(ele => {
                             return (
-                                <div className={s.releasesCard} data-aos="flip-right">
+                                <div className={s.releasesCard} data-aos="flip-right" key={ele.id}>
                                     <div id={s.image}>
                                         <Image src={ele.imageLink} width={200} height={200} alt='release' className={s.img} />
 
