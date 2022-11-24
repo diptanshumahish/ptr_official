@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "In Your Wake",
+        "artist": "BT",
+        "imageLink": "https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0",
+        "genre": "chill, Lo-Fi",
+        "link": "url"
+    },
+    {
+        "id": 2,
+        "name": "In Your Wake",
+        "artist": "BT",
+        "imageLink": "https://i.scdn.co/image/ab67616d0000b2735e25ddeab48d37aaec6d98f0",
+        "genre": "chill, Lo-Fi",
+        "link": "url"
+    }
+]

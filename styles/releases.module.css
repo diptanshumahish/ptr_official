@@ -1,0 +1,71 @@
+#releases {
+
+    padding: 3rem;
+    padding-top: 4rem;
+}
+
+#releaseHead {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: white;
+}
+
+#subHead {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#releasesCards {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.releasesCard {
+    background-color: rgba(255, 255, 255, 0.048);
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    padding: 2rem 3rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    color: white;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.artist {
+    font-size: 2rem;
+    color: var(--theme-color);
+}
+
+.genre {
+    font-size: 1.5rem;
+    color: rgb(211, 206, 206);
+}
+
+.link {
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
