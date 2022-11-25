@@ -345,7 +345,7 @@ export default function Home() {
         <section id={s.stats}>
           <div id={s.statsAreaBack}>
             <div id={s.statsArea}>
-              <div className={s.statsColumn} data-aos='fade-right'>
+              <div className={s.statsColumn} data-aos='flip-left'>
                 <div className={s.statsColumnHead}>
                   RELEASES
                 </div>
@@ -353,7 +353,7 @@ export default function Home() {
                   15+
                 </div>
               </div>
-              <div className={s.statsColumn} data-aos='fade-up'>
+              <div className={s.statsColumn} data-aos='flip-left'>
                 <div className={s.statsColumnHead}>
                   ARTISTS
                 </div>
@@ -361,7 +361,7 @@ export default function Home() {
                   10+
                 </div>
               </div>
-              <div className={s.statsColumn} data-aos='fade-left'>
+              <div className={s.statsColumn} data-aos='flip-left'>
                 <div className={s.statsColumnHead}>
                   COUNTRIES
                 </div>
