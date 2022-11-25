@@ -104,7 +104,7 @@ export default function Demo() {
                         <div className={s.inpHead}>
                             Any other comments
                         </div>
-                        <input type="text" className={s.input} placeholder="Enter your comments" id="comments" onChange={() => {
+                        <textarea type="text" className={s.input} placeholder="Enter your comments" id="comments" onChange={() => {
                             setComments(document.getElementById('comments').value);
                         }} />
                         <div id={s.submitButton} style={{ backgroundColor: but }} onClick={() => {
