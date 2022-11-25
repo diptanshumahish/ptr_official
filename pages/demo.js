@@ -27,7 +27,7 @@ export default function Demo() {
             comments, comments,
             SubmissionDate: Timestamp.now(),
         }, { merge: true, mergeFields: true }).then(() => {
-            toast.success('Demo Submission succesfull', {
+            toast.success('Demo Submission succesful', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -121,8 +121,17 @@ export default function Demo() {
                                 });
                             }
                             else {
-                                submit();
                                 setBut('#98d7de');
+                                submit().then(() => {
+                                    document.getElementById('comments').value = '';
+                                    document.getElementById('email').value = '';
+                                    document.getElementById('spotify').value = '';
+                                    document.getElementById('url').value = '';
+                                    document.getElementById('name').value = '';
+                                    document.getElementById('email').value = '';
+
+                                })
+
                             }
                         }}>Submit</div>
                     </div>

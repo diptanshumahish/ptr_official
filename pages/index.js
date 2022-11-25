@@ -213,7 +213,7 @@ export default function Home() {
                     </div></Link>
                 </div>
               </div>
-              <div className={s.newsCard}data-aos="flip-right">
+              <div className={s.newsCard} data-aos="flip-right">
                 <Image src='https://i.scdn.co/image/ab67616d0000b273b6ad5806c1f0c135a225b10f' width={250} height={250} className={s.newsImage} alt='release' />
                 <div className={s.newsDetails}>
                   <span>25th November, 2022:</span>
@@ -321,8 +321,8 @@ export default function Home() {
           </div>
 
         </section>
-        <section id={s.abtUs}>
-          <div className={s.newsHead}>
+        <section id={s.abtUs} data-aos='flip-right'>
+          <div className={s.newsHead} >
             About Us
             <div className={s.nesSub}>
               A few lines?
@@ -345,7 +345,7 @@ export default function Home() {
         <section id={s.stats}>
           <div id={s.statsAreaBack}>
             <div id={s.statsArea}>
-              <div className={s.statsColumn}>
+              <div className={s.statsColumn} data-aos='fade-right'>
                 <div className={s.statsColumnHead}>
                   RELEASES
                 </div>
@@ -353,7 +353,7 @@ export default function Home() {
                   15+
                 </div>
               </div>
-              <div className={s.statsColumn}>
+              <div className={s.statsColumn} data-aos='fade-up'>
                 <div className={s.statsColumnHead}>
                   ARTISTS
                 </div>
@@ -361,7 +361,7 @@ export default function Home() {
                   10+
                 </div>
               </div>
-              <div className={s.statsColumn}>
+              <div className={s.statsColumn} data-aos='fade-left'>
                 <div className={s.statsColumnHead}>
                   COUNTRIES
                 </div>
